@@ -22,7 +22,7 @@ describe('parseTimes', () => {
         'utf8'
       ))
       const res: any = parseTimes(testInput)
-      const avgIsDNF = expectedOutput.DNF
+      const avgIsDNF: boolean = expectedOutput.DNF
       it('should return a boolean for whether the average is DNF', () => {
         expect(avgIsDNF).not.toBeNull()
         expect(avgIsDNF).not.toBeUndefined()

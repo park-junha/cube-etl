@@ -18,12 +18,21 @@ function parseAverageTime(avgHeader: string): number {
 
 function parseTimeAndScramble(entry: string): Time {
   const slicedEntry: string[] = entry.split("\u{20}\u{a0}\u{20}")
-  const time: number = parseFloat(slicedEntry[0]
+  const timeString: string = slicedEntry[0]
     .split(" ")[1]
     .replace("(", "")
     .replace(")", "")
     .replace("DNF", "")
-  )
+  let minutes: number = 0
+  let seconds: number = 0
+  if (timeString.includes(':')) {
+    const timeStringSlices: string[] = timeString.split(':')
+    minutes = parseInt(timeStringSlices[0])
+    seconds = parseFloat(timeStringSlices[1])
+  } else {
+    seconds = parseFloat(timeString)
+  }
+  const time: number = minutes * 60 + seconds
   const scramble: string = slicedEntry[slicedEntry.length - 1]
   const returnObject: Time = {
     time: time,
