@@ -1,7 +1,7 @@
 {
   "name": "cubeParser",
-  "version": "0.0.0",
-  "description": "",
+  "version": "0.0.1",
+  "description": "Speedcubing times parser",
   "scripts": {
     "test": "jest",
     "parse": "ts-node scripts/printParseTimes.ts"

@@ -1,0 +1,54 @@
+{
+  "times": [
+    {
+      "time": 17.45,
+      "scramble": "D' B2 R2 D' U2 R2 U' B2 D2 B2 L2 B L2 R' B U' R F' L2 D B"
+    },
+    {
+      "time": 15.46,
+      "scramble": "L F2 R2 D2 R' D2 L' B2 D2 R' F2 U B' F2 D2 F' L' R' F' U' L'"
+    },
+    {
+      "time": 13.39,
+      "scramble": "U2 L2 F2 D F2 U L2 D' R2 F2 U2 R' U B L B U2 F2 R D' F2"
+    },
+    {
+      "time": 19.93,
+      "scramble": "B2 D' R2 D2 B2 D2 B2 L2 D' F2 L2 R D' B U' L2 B R U' R2 B'"
+    },
+    {
+      "time": 13.92,
+      "scramble": "D2 F2 D' U2 R2 D2 L2 U' L2 U' R F' D F2 L B' L2 R' B2 U' B'"
+    },
+    {
+      "time": 21.43,
+      "scramble": "F2 U2 B2 U2 L2 B R2 B D2 R2 U2 L' F L' R' F2 U' R D' R B"
+    },
+    {
+      "time": 16.57,
+      "scramble": "R F2 U' B R2 D' B2 L D F R2 B2 L2 U R2 U' L2 D B2 D2 B2"
+    },
+    {
+      "time": 17.87,
+      "scramble": "U' L2 F2 D B2 U' B2 U L2 D' U' L' R B D U' L F' D' L' U2"
+    },
+    {
+      "time": 15.42,
+      "scramble": "F2 D R2 L' F B L F' U' R' U' F2 D' L2 D R2 F2 B2 D' B2 U"
+    },
+    {
+      "time": 15.91,
+      "scramble": "U2 L2 F L2 B2 L2 B' L2 F U2 F' R' D U2 B2 D F U L2 R2"
+    },
+    {
+      "time": 14.58,
+      "scramble": "U2 F2 L2 D2 R' D2 R B2 R2 D2 U2 F L U' L' U' L F2 D"
+    },
+    {
+      "time": 17.1,
+      "scramble": "B' U2 D' F' L' U B R U L F2 B2 U F2 U L2 U2 R2 D2 F2 U'"
+    }
+  ],
+  "average": 16.42,
+  "DNF": false
+}

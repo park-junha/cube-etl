@@ -2,11 +2,13 @@ interface Time {
   time: number
   scramble: string
   plusTwo?: boolean
+  DNF?: boolean
 }
 
 interface Average {
   times: Time[]
-  average: number
+  average: number | null
+  DNF: boolean
 }
 
 function parseAverageTime(avgHeader: string): number {
@@ -20,21 +22,32 @@ function parseTimeAndScramble(entry: string): Time {
     .split(" ")[1]
     .replace("(", "")
     .replace(")", "")
+    .replace("DNF", "")
   )
   const scramble: string = slicedEntry[slicedEntry.length - 1]
   const returnObject: Time = {
     time: time,
-    scramble: scramble
+    scramble: scramble,
+    DNF: false
   }
   if (slicedEntry[0].includes("+")) {
     returnObject.plusTwo = true
+  }
+  if (slicedEntry[0].includes("DNF")) {
+    returnObject.DNF = true
   }
   return returnObject
 }
 
 export function parseTimes(input: string): Average {
   const slicedInput: string[] = input.split('\n')
-  const avgTime: number = parseAverageTime(slicedInput[0])
+  let avgIsDNF: boolean = false
+  let avgTime: number = null
+  if (slicedInput[0].includes('DNF')) {
+    avgIsDNF = true
+  } else {
+    avgTime = parseAverageTime(slicedInput[0])
+  }
   const times = []
   if (slicedInput[slicedInput.length - 1] === '') {
     slicedInput.pop()
@@ -48,6 +61,7 @@ export function parseTimes(input: string): Average {
   }
   return {
     times: times,
-    average: avgTime
+    average: avgTime,
+    DNF: avgIsDNF
   }
 }
