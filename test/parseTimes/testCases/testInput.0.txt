@@ -1,0 +1,6 @@
+Average of 5: 14.48
+1. 15.46   L R2 F2 R D2 L D2 U2 L2 B2 D' B2 F R' D' L2 B U2 F2 L2
+2. (15.83)   D' F2 L2 U' R2 B2 D' L2 U B2 U2 L' B' R' B2 L U' R2 F' L' D'
+3. 14.38   L2 R2 D F2 L2 F2 D' U' L2 D2 L2 B L F L2 F R2 F2 D2 B' U2
+4. 13.61   F2 D2 L2 B2 R2 D L2 U L2 U' R D F L U' L2 D2 F' U' R'
+5. (11.97)   F' U' L F U2 F' R' B2 U' R' F2 L2 U B2 U' L2 U F2 D' B2 U

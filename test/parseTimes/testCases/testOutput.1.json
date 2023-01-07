@@ -1,0 +1,25 @@
+{
+  "times": [
+    {
+      "time": 15.58,
+      "scramble": "B2 U L2 D' B2 L2 B2 F2 D' R2 D2 L U2 R2 F' L' U2 L' R' B U"
+    },
+    {
+      "time": 18.01,
+      "scramble": "L2 U L2 U2 R2 D' R2 U L2 B2 U' B' R2 B2 R U B' L F2 L'"
+    },
+    {
+      "time": 14.29,
+      "scramble": "U2 R2 B' U2 R2 F2 U2 F' L2 B2 L' F2 R' B' D' L B L2 B U"
+    },
+    {
+      "time": 15.2,
+      "scramble": "F2 R2 B2 L2 F2 L D2 F2 U2 B2 R2 U L2 F L F2 R' U2 L' R'"
+    },
+    {
+      "time": 15.25,
+      "scramble": "U2 R2 U' B2 D' B2 R2 D B2 F2 U2 R B U R' U2 F R2 B'"
+    }
+  ],
+  "average": 15.34
+}

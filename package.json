@@ -1,0 +1,42 @@
+{
+  "name": "cubeParser",
+  "version": "0.0.0",
+  "description": "",
+  "scripts": {
+    "test": "jest",
+    "parse": "ts-node scripts/printParseTimes.ts"
+  },
+  "keywords": [],
+  "author": "Junha Park",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^29.2.5",
+    "babel-jest": "^29.3.1",
+    "jest": "^29.3.1",
+    "ts-jest": "^29.0.3",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.9.4"
+  },
+  "jest": {
+    "roots": [
+      "<rootDir>/test"
+    ],
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "src/**/*.ts"
+    ],
+    "preset": "ts-jest",
+    "transform": {
+      "^.+\\.(ts|tsx)?$": "ts-jest",
+      "^.+\\.(js|jsx)$": "babel-jest"
+    },
+    "testMatch": [
+      "<rootDir>/test/**/*.spec.ts"
+    ]
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  }
+}
