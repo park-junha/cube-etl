@@ -21,5 +21,6 @@
       "scramble": "U2 R2 U' B2 D' B2 R2 D B2 F2 U2 R B U R' U2 F R2 B'"
     }
   ],
-  "average": 15.34
+  "average": 15.34,
+  "DNF": false
 }
