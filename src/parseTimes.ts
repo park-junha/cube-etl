@@ -1,15 +1,6 @@
-interface Time {
-  time: number
-  scramble: string
-  plusTwo?: boolean
-  DNF?: boolean
-}
-
-interface Average {
-  times: Time[]
-  average: number | null
-  DNF: boolean
-}
+import { CubeType } from './enums/CubeType'
+import { Time } from './interfaces/Time'
+import { Average } from './interfaces/Average'
 
 function parseAverageTime(avgHeader: string): number {
   const slicedAvgHeader: string[] = avgHeader.split(' ')
@@ -48,7 +39,7 @@ function parseTimeAndScramble(entry: string): Time {
   return returnObject
 }
 
-export function parseTimes(input: string): Average {
+export function parseTimes(input: string, cubeType?: CubeType, cube?: string): Average {
   const slicedInput: string[] = input.split('\n')
   let avgIsDNF: boolean = false
   let avgTime: number = null
@@ -70,6 +61,8 @@ export function parseTimes(input: string): Average {
   }
   return {
     times: times,
+    cubeType: cubeType ?? CubeType.Three,
+    cube: cube ?? null,
     average: avgTime,
     DNF: avgIsDNF
   }
